@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SARA THE AI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <!-- TOP BAR -->
+    <header class="top-bar">
+
+      <div class="logo">
+        <h1>SARA</h1>
+        <p>THE AI</p>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        <span id="statusText">Online</span>
+      </div>
+
+    </header>
+
+
+    <!-- SARA -->
+    <section class="assistant">
+
+      <div class="avatar-container">
+
+        <div class="avatar-glow"></div>
+
+        <div class="avatar">
+
+          <div class="hair"></div>
+
+          <div class="avatar-face">
+
+            <div class="eye left-eye"></div>
+            <div class="eye right-eye"></div>
+
+            <div class="nose"></div>
+
+            <div class="mouth"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <h2 id="greeting">Hello Abbu</h2>
+
+      <p class="assistant-text" id="assistantText">
+        I'm SARA, your personal AI assistant.
+      </p>
+
+      <p class="command-hint">
+        Say: <b>"SARA, open dashboard"</b>
+      </p>
+
+    </section>
+
+
+    <!-- VOICE -->
+    <section class="voice-section">
+
+      <button
+        id="voiceButton"
+        class="voice-button"
+        type="button"
+      >
+        🎙️
+      </button>
+
+      <p id="voiceStatus">
+        Tap to talk
+      </p>
+
+    </section>
+
+
+    <!-- DASHBOARD BUTTON -->
+    <section class="dashboard-section">
+
+      <button
+        id="dashboardButton"
+        class="dashboard-button"
+        type="button"
+      >
+        <span>▦</span>
+        Open Dashboard
+      </button>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+    <section
+      id="dashboard"
+      class="dashboard hidden"
+    >
+
+      <div class="dashboard-header">
+
+        <div>
+          <h2>Dashboard</h2>
+          <p>SARA control center</p>
+        </div>
+
+        <button
+          id="closeDashboard"
+          class="close-button"
+          type="button"
+        >
+          ✕
+        </button>
+
+      </div>
+
+
+      <div class="dashboard-grid">
+
+
+        <div class="dashboard-card">
+
+          <span class="card-icon">📅</span>
+
+          <h3>Schedule</h3>
+
+          <p id="scheduleData">
+            No meetings yet
+          </p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+          <span class="card-icon">🔔</span>
+
+          <h3>Notifications</h3>
+
+          <p id="notificationData">
+            No new notifications
+          </p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+          <span class="card-icon">📍</span>
+
+          <h3>Location</h3>
+
+          <p id="locationData">
+            Location unavailable
+          </p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+          <span class="card-icon">📈</span>
+
+          <h3>Finance</h3>
+
+          <p id="financeData">
+            Live data coming soon
+          </p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+          <span class="card-icon">▶️</span>
+
+          <h3>YouTube</h3>
+
+          <p id="youtubeData">
+            Automation coming soon
+          </p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+          <span class="card-icon">🧠</span>
+
+          <h3>SARA Memory</h3>
+
+          <p id="memoryData">
+            Memory system coming soon
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <p>SARA THE AI</p>
+
+      <span>
+        Voice • Intelligence • Automation
+      </span>
+
+    </footer>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
